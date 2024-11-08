@@ -26,7 +26,7 @@ function Navbar() {
             height={40}
             alt="Food Website Logo"/>
           </span>
-          <Link href="/"><h4>Taste Time</h4></Link>
+          <Link href="/"><h4>Taste Food</h4></Link>
           {/* <span> <GiHamburgerMenu/></span> */}
         </div>
         
@@ -34,10 +34,11 @@ function Navbar() {
           <div className={style.list1}>
             <ul>
               <li className={style.opt}>
-                <Link className={style.opt2} href="#">
-                  Menu <IoIosArrowDown />
+                <Link className={style.opt2} href="/Menu">
+                  Menu 
+                  {/* <IoIosArrowDown /> */}
                 </Link>
-                <div className={style.Menu}>
+                {/* <div className={style.Menu}>
                   <ul>
                     <li>
                       <Link href="/Bestsellers">Bestsellers</Link>
@@ -52,7 +53,7 @@ function Navbar() {
                       <Link href="/Specials">Chef's Specials</Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </li>
               <li className={style.opt}>
                 <Link className={style.opt2} href="#">
@@ -122,7 +123,7 @@ function Navbar() {
           <div className={style.list2}>
             <ul>
               <li><Link href="/Blog">Blog</Link></li>
-              <li><Link href="/login">Order Online</Link></li>
+              <li><Link href="/Order">Order Summary</Link></li>
               <li><Link href="/Gallery">Gallery</Link></li>
               <Link href="/AdminLogin">
                 <button className={style.contact}>Login</button>
@@ -141,18 +142,19 @@ function Navbar() {
       {active &&
         <ul className={style.sideMenu}>
           <li className={style.opt}>
-            <Link className={style.opt2} href="#">
-              Menu <IoIosArrowDown />
+            <Link className={style.opt2} href="/Menu">
+              Menu 
+              {/* <IoIosArrowDown /> */}
             </Link>
             <hr className={style.horizontal}/>
-            <div className={style.Menu}>
+            {/* <div className={style.Menu}>
               <ul>
                 <li><Link href="/Bestsellers">Bestsellers</Link></li>
                 <li><Link href="/NewArrivals">New Arrivals</Link></li>
                 <li><Link href="/Combos">Combos</Link></li>
                 <li><Link href="/Specials">Chef's Specials</Link></li>
               </ul>
-            </div>
+            </div> */}
           </li>
           <li className={style.opt}>
             <Link className={style.opt2} href="#">
@@ -205,7 +207,7 @@ function Navbar() {
           </li>
           <li className={style.opt}><Link href="/Blog">Blog</Link></li>
           <hr className={style.horizontal}/>
-          <li className={style.opt}><Link href="/login">Order Online</Link></li>
+          <li className={style.opt}><Link href="/Order">Order Summary</Link></li>
           <hr className={style.horizontal}/>
           <li className={style.opt}><Link href="/Gallery">Gallery</Link></li>
           <hr className={style.horizontal}/>

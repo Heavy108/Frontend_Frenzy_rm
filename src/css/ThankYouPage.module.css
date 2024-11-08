@@ -1,0 +1,54 @@
+.ThankYouContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .ThankYouImage {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .ThankYouHeading {
+    font-size: 2em;
+    color: #2c3e50;
+    margin: 10px 0;
+  }
+  
+  .ThankYouText {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin: 0 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .ThankYouHeading {
+      font-size: 1.8em;
+    }
+  
+    .ThankYouText {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ThankYouImage {
+      width: 200px;
+    }
+  
+    .ThankYouHeading {
+      font-size: 1.5em;
+    }
+  
+    .ThankYouText {
+      font-size: 0.9em;
+    }
+  }
+  

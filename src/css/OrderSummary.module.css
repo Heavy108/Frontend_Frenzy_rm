@@ -1,0 +1,174 @@
+/* Container */
+.OrderSummaryContainer {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Heading */
+.OrderSummaryContainer h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Empty Cart Section */
+.EmptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.EmptyCartImage {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.EmptyCart p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Cart Item */
+.CartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.CartItem:last-child {
+  border-bottom: none;
+}
+
+.CartItem div {
+  display: flex;
+  flex-direction: column;
+}
+
+.CartItem h3 {
+  font-size: 1.4em;
+  margin: 0;
+  color: #34495e;
+}
+
+.CartItem p {
+  font-size: 1em;
+  color: #7f8c8d;
+}
+
+/* Button Container */
+.ButtonContainer {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+
+/* Buttons within .CartItem */
+.CartItem button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px; /* Set fixed width for buttons */
+}
+
+/* Add More Button */
+.AddMoreButton {
+  background-color: #000; /* Black background */
+  color: #fff;
+  border: none;
+}
+
+.AddMoreButton:hover {
+  background-color: #444; /* Darker shade for hover */
+}
+
+/* Delete Button */
+.DeleteButton {
+  background-color: #fff; /* White background */
+  color: #c0392b; /* Red color for delete */
+  border: 1px solid #c0392b; /* Red border */
+}
+
+.DeleteButton:hover {
+  background-color: #f2f2f2; /* Light gray on hover */
+  color: #e74c3c; /* Darker red for hover */
+}
+
+/* Total Price Section */
+.TotalPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 2px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+.TotalPrice h3 {
+  font-size: 1.6em;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.PlaceOrderButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.PlaceOrderButton:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .OrderSummaryContainer {
+    padding: 15px;
+  }
+
+  .OrderSummaryContainer h2 {
+    font-size: 1.8em;
+  }
+
+  .CartItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .CartItem h3 {
+    font-size: 1.2em;
+  }
+
+  .TotalPrice {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .TotalPrice h3 {
+    font-size: 1.4em;
+  }
+
+  .PlaceOrderButton {
+    width: 100%;
+    text-align: center;
+  }
+}
