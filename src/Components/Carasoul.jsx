@@ -106,7 +106,7 @@ const Carasoul = () => {
     <>
       <div className="carouselwrapper module-wrapper">
         <center className="CarasoulDescription">
-          <h4>FEATURES MAGAZINE</h4>
+          <h4>FEATURES RESTARUNT</h4>
         </center>
 
         <ul
