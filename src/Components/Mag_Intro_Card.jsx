@@ -1,4 +1,4 @@
-import style from "../css/Mag_Intro_Card.module.css";
+import style from "@/css/Mag_Intro_Card.module.css";
 
 
 function MagCard({title,image,Info}){

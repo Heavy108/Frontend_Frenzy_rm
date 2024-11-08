@@ -1,4 +1,4 @@
-import style from "../css/Footer.module.css";
+import style from "@/css/Footer.module.css";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";

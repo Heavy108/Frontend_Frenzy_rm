@@ -1,9 +1,9 @@
 // 'use client'
 // import "../global.css";
-import MagCard from "../../Components/Mag_Intro_Card";
-import NavBar from "../../Components/NavBar";
-import Mag_Section from "../../Components/MagCluster";
-import Footer from "../../Components/Footer";
+import MagCard from "@/Components/Mag_Intro_Card";
+import NavBar from "@/Components/NavBar";
+import Mag_Section from "@/Components/MagCluster";
+import Footer from "@/Components/Footer";
 const Data =[
   {
     "food_name": "Margherita Pizza",

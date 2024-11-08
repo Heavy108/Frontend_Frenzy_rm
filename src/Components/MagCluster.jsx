@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Pagination from "./Pagination";
-import style from "../css/MagCluster.module.css";
+import style from "@/css/MagCluster.module.css";
 import Magazine from "./Magazine_Frame_1";
 import ThreeCardFrame from "./ThreeCardFrame";
 import Link from "next/link";

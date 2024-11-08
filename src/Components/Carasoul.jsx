@@ -1,5 +1,5 @@
 'use client'
-import "../CSS/Carasoul.css";
+import "@/css/Carasoul.css";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { FaLongArrowAltLeft ,FaLongArrowAltRight} from "react-icons/fa";

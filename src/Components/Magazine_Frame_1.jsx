@@ -1,4 +1,4 @@
-import style from "../css/Magazine_Frame_1.module.css";
+import style from "@/css/Magazine_Frame_1.module.css";
 
 
 // Magazine Frame FOR MAIN PAGE
