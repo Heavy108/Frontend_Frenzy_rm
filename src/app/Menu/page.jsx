@@ -1,7 +1,7 @@
 // 'use client'
 // import "../global.css";
 import MagCard from "@/Components/Mag_Intro_Card";
-import NavBar from "@/Components/NavBar";
+import Navbar from "@/Components/Navbar";
 import Mag_Section from "@/Components/MagCluster";
 import Footer from "@/Components/Footer";
 const Data =[
@@ -88,7 +88,7 @@ function Byte() {
     "< Byte Description > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ";
   return (
     <>
-      <NavBar />
+      <Navbar />
       <MagCard title={Title} image={Image} Info={Description} />
       <Mag_Section Data={Data} MagazinesPerPage={3} />
 
