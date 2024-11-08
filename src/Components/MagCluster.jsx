@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import Pagination from "./Pagination";
 import style from "../css/MagCluster.module.css";
 import Magazine from "./Magazine_Frame_1";
+import ThreeCardFrame from "./ThreeCardFrame";
+import Link from "next/link";
 
-function Mag_Section({  Data, MagazinesPerPage}) {
+function Mag_Section({ Data, MagazinesPerPage }) {
   const [currentPage, setCurrentPage] = useState(1);
- 
+
   const lastIndex = currentPage * MagazinesPerPage;
   const firstIndex = lastIndex - MagazinesPerPage;
   const records = Data.slice(firstIndex, lastIndex);
@@ -31,16 +33,24 @@ function Mag_Section({  Data, MagazinesPerPage}) {
 
   return (
     <div className={style.All_magazine}>
-      <center className={style.mag_head}>
-        <h4>Today's Special</h4>
-      </center>
+      <div className={style.mag_head}>
+        <center>
+          <h4>Today's Special</h4>
+        </center>
+        {/* Button to go to the Order Summary */}
+        
+      </div>
 
-      {records.map((items, index) => (
-        <Magazine
-          key={index}
-          {...items} // Passing  all properties from 'items' as props
-        />
-      ))}
+      {/* Display items in ThreeCardFrame if MagazinesPerPage is 3 */}
+      {MagazinesPerPage === 3 ? (
+        records.map((items, index) => (
+          <ThreeCardFrame key={index} {...items} />
+        ))
+      ) : (
+        records.map((items, index) => (
+          <Magazine key={index} {...items} />
+        ))
+      )}
 
       <Pagination
         currentPage={currentPage}

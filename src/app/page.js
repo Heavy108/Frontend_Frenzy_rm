@@ -6,6 +6,7 @@ import Carasoul from "@/Components/Carasoul";
 import Mag_Section from "@/Components/MagCluster";
 import Magazine from "@/Components/Magazine_Frame_1";
 import Footer from "@/Components/Footer";
+import NewsLetter from "@/Components/Newsletter";
 // import {Data ,Data2} from "@/JS/Data";
 const carouselData = [
   {
@@ -64,6 +65,7 @@ export default function Home() {
    
    <Carasoul items={carouselData} />;
    <Mag_Section  Data={Data} MagazinesPerPage={9}/>
+   <NewsLetter/>
    <Footer/>
    
    </>
