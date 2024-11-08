@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../css/Pagination.module.css";
+import style from "@/css/Pagination.module.css";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 function Pagination({

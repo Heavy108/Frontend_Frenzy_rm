@@ -10,8 +10,8 @@ import NewsLetter from "@/Components/Newsletter";
 // import {Data ,Data2} from "@/JS/Data";
 const carouselData = [
   {
-    bg_color: "#ffe5b4",
-    image: "/1.jpg", // Path to image in public folder
+    bg_color: "Black",
+    image: "/4.jpg", // Path to image in public folder
     title: "Double Cheeseburger Special",
     text: "Enjoy a juicy double cheeseburger with fresh lettuce, tomatoes, and a side of crispy fries. Limited-time offer!",
     address: "/deals/double-cheeseburger-special",

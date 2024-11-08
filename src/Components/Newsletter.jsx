@@ -1,5 +1,5 @@
 "use client";
-import style from "../CSS/Newsletter.module.css";
+import style from "@/css/Newsletter.module.css";
 import { MdEmail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { useState } from "react";

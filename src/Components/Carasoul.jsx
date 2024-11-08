@@ -6,8 +6,8 @@ import { FaLongArrowAltLeft ,FaLongArrowAltRight} from "react-icons/fa";
 //Data
 const items = [
   {
-    bg_color: "#ffefd5",
-    image: "/1.jpg", // Path to image in public folder
+    bg_color: "#000000",
+    image: "/5.jpg", // Path to image in public folder
     title: "Spaghetti Carbonara",
     text: "A delicious blend of creamy sauce with crispy bacon and parmesan cheese.",
     address: "/dishes/spaghetti-carbonara",

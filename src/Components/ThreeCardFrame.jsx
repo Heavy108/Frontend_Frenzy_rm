@@ -1,4 +1,4 @@
-import style from "../CSS/ThreeCardFrame.module.css";
+import style from "@/css/ThreeCardFrame.module.css";
 import Link from "next/link";
 
 function ThreeCardFrame(props) {
